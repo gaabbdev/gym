@@ -12,7 +12,7 @@ html {
 
 body {
   background-color: #121818;
-  font-family: "Red+Hat+Display";
+  font-family: "Red Hat Display";
 }
 
 img {
@@ -39,6 +39,10 @@ section {
 @media(min-width:768px) {
   h1 {
     font-size: 3rem;
+  }
+
+  p{
+    font-size: 1.3rem;
   }
 }
 
@@ -103,6 +107,10 @@ a {
   margin-top: 2rem;
   display: inline-flex;
   align-items: center;
+}
+
+.button--nav {
+  margin-top: 0;
 }
 
 .button--gray {
@@ -433,5 +441,16 @@ a {
   .footer {
     grid-template-columns: repeat(5, 1fr);
     gap: 2rem;
+  }
+}
+
+.plan__card, .program__card{
+  max-width: 80%;
+  margin: 2rem auto;
+}
+
+@media (min-width:768px) {
+  .plan__card, .program__card{
+    max-width: 100%;
   }
 }
